@@ -9,7 +9,6 @@ An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, st
 
 ---
 
-## 📌 Project Overview & Variable Taxonomy
 
 ## 📌 Project Overview & Variable Taxonomy
 
