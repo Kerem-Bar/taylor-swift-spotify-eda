@@ -26,16 +26,16 @@ The variables are classified into four metadata defined categories:
 ```text
 taylor-swift-spotify-eda/
 │
-├── EDA_final_project.ipynb         # Data Preprocessing, Univariate & Multivariate Notebook
-├── taylor_swift_spotify.csv        # Raw Spotify Dataset (582 records, 18 columns)
+├── EDA_final_project.ipynb # Data Preprocessing, Univariate & Multivariate Notebook
+├── taylor_swift_spotify.csv # Raw Spotify Dataset (582 records, 18 columns)
 ├── EDA Final Project Kerem Bar.pdf # Comprehensive EDA Academic Research Report
-├── README.md                       # Repository Documentation & Findings
-├── Figure1.png                     # Univariate Popularity Distribution & Box Plot
-├── Figure2.png                     # Univariate Danceability Distribution & Box Plot
-├── Figure3.png                     # Univariate Frequency across Engineered Album Families
-├── Figure4.jpg                     # Pearson Correlation Matrix Heatmap
-├── Figure5.jpg                     # Popularity vs. Release Date (Temporal Dynamics)
-└── Figure6.png                     # Popularity Distribution across Album Families Box Plot
+├── README.md # Repository Documentation & Findings
+├── Figure1.png # Univariate Popularity Distribution & Box Plot
+├── Figure2.png # Univariate Danceability Distribution & Box Plot
+├── Figure3.png # Univariate Frequency across Engineered Album Families
+├── Figure4.jpg # Pearson Correlation Matrix Heatmap
+├── Figure5.jpg # Popularity vs. Release Date (Temporal Dynamics)
+└── Figure6.png # Popularity Distribution across Album Families Box Plot
 
 ```
 
