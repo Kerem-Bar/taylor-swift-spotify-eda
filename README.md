@@ -11,14 +11,15 @@ An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, st
 
 ## 📌 Project Overview & Variable Taxonomy
 
-Digital streaming platforms enable data-driven decision-making in the music industry. This research performs a structured Exploratory Data Analysis (EDA) on Taylor Swift's Spotify catalog (582 rows, 18 columns).
+## 📌 Project Overview & Variable Taxonomy
 
-The variables are classified into four metadata-defined categories:
-* **Primary Metric of Interest (`int64`):** `popularity` (0–100 score calculated by Spotify based on stream volume and recency).
+Digital streaming platforms have revolutionized how musical trends and artistic performance are quantified, empowering creators and record labels to make data-driven decisions that mitigate commercial risks. This research conducts a structured Exploratory Data Analysis (EDA) on Taylor Swift's Spotify catalog (582 rows, 18 columns). Her multi-decade career and diverse musical style make her catalog an ideal empirical landscape to explore how acoustic features interact with audience engagement over time.
+
+The variables are classified into four metadata defined categories:
+* **Primary Metric of Interest (`int64`):** `popularity` (0 to 100 score calculated by Spotify based on stream volume and recency).
 * **Audio Descriptors (`float64`):** Continuous acoustic features (`acousticness`, `danceability`, `energy`, `instrumentalness`, `liveness`, `speechiness`, `valence`, `loudness`, `tempo`).
 * **Structural Layout Parameters (`int64`):** Spatial and sequencing parameters (`track_number`, `duration_ms`).
 * **Identification & Metadata Parameters (`object`):** Metadata attributes (`name`, `album`, `id`, `uri`, `release_date`).
-
 ---
 
 ## 📁 Repository Structure
