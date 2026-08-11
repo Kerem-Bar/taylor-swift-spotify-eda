@@ -57,7 +57,7 @@ taylor-swift-spotify-eda/
 
 ### 3. Multivariate Analysis
 
-* **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` ($r = 0.63$). Identified severe multicollinearity risk between `energy` and `loudness` ($r = 0.79$) and strong negative correlation between `loudness` and `acousticness` ($r = -0.73$).
+* **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` (r = 0.63). Identified severe multicollinearity risk between `energy` and `loudness` (r = 0.79) and strong negative correlation between `loudness` and `acousticness` (r = -0.73).
 * **Temporal Dynamics & Re-recordings (Figure 5):** Validated the "Recency Effect" where post-2020 releases sustain elevated popularity (60–80+). Uncovered dramatic upward popularity shifts in modern re-recorded albums ("Taylor's Version") compared to original releases.
 * **Era Micro-Anomalies (Figure 6):** Proved global baselines obscure localized behavior. Isolated era-specific outliers:
 * **evermore (2020):** *"willow"* (popularity: 77) acts as a positive anomaly in a quiet indie-folk catalog.
@@ -72,8 +72,8 @@ taylor-swift-spotify-eda/
 This EDA directly informs future machine learning tasks by establishing explicit data-structuring and modeling requirements:
 
 1. **Mandatory Outlier Filter:** The 3 non-musical voice memo outliers must be removed prior to fitting linear models to prevent severe parameter distortion and artificial variance inflation.
-2. **Minimum Category Sample Thresholds:** To address group sample imbalance and high statistical variance in smaller categories (e.g., *Live* family with $n = 8$), downstream modeling must enforce minimum sample size thresholds per `album_families`.
-3. **Model-Specific Multicollinearity Management:** The high linear correlation between `energy` and `loudness` ($r = 0.79$) poses a multicollinearity risk in linear regression (requiring feature reduction or PCA), whereas both features can safely be retained in tree-based ensemble algorithms.
+2. **Minimum Category Sample Thresholds:** To address group sample imbalance and high statistical variance in smaller categories (e.g., *Live* family with n = 8), downstream modeling must enforce minimum sample size thresholds per `album_families`.
+3. **Model-Specific Multicollinearity Management:** The high linear correlation between `energy` and `loudness` (r = 0.79) poses a multicollinearity risk in linear regression (requiring feature reduction or PCA), whereas both features can safely be retained in tree-based ensemble algorithms.
 4. **Localized Era Framework (Preventing Pooling Bias):** `popularity` remains the core target variable. Because temporal progression and localized era characteristics heavily outweigh standalone acoustic features, modeling must be executed dynamically at the `album_families` level to prevent macro-aggregate pooling bias.
 
 ---
