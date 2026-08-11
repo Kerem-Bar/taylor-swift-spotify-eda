@@ -81,20 +81,19 @@ This EDA directly informs future machine learning tasks by establishing explicit
 ## 📊 Visualizations Highlights
 
 | Figure 1: Popularity Distribution | Figure 2: Danceability Distribution |
-| --- | --- |
-|  |  |
+| :---: | :---: |
+| ![Figure 1](Figure1.png) | ![Figure 2](Figure2.png) |
 | *Histogram & Box Plot isolating voice memo outliers.* | *Distribution curve identifying catalog redundancies.* |
 
 | Figure 3: Album Families Count Plot | Figure 4: Correlation Matrix Heatmap |
-| --- | --- |
-|  |  |
+| :---: | :---: |
+| ![Figure 3](Figure3.png) | ![Figure 4](Figure4.jpg) |
 | *Sample frequency across 12 engineered album families.* | *Pearson correlation heatmap identifying feature risk.* |
 
 | Figure 5: Popularity vs. Release Date Dynamics | Figure 6: Popularity by Album Family |
-| --- | --- |
-|  |  |
+| :---: | :---: |
+| ![Figure 5](Figure5.jpg) | ![Figure 6](Figure6.png) |
 | *Scatter plot illustrating recency & re-recording impact.* | *Box plot highlighting localized era variance & anomalies.* |
-
 ---
 
 ## 🛠️ Tech Stack & Methods
