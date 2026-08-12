@@ -53,9 +53,8 @@ taylor-swift-spotify-eda/
 ### 2. Univariate Analysis
 
 * **Popularity Distribution (Figure 1):** Mean = 57.86, Median = 62.00, Mode = 63.00, Skewness = -0.533. Left-skewed distribution driven by the 3 voice memo outliers from *1989 (Deluxe Edition)*. Upper statistical fence lies at 107.5 (beyond physical 100 limit), proving high-streaming tracks are true catalog behavior rather than statistical outliers.
-* **Danceability Distribution (Figure 2):** Approximately symmetric bell-curve (Mean = 0.581, Median = 0.594, Mode = 0.604, Skewness = -0.265). Upper outliers exposed severe catalog redundancy across expanded album editions.
-* **Sample Distribution (Figure 3):** Horizontal count plot revealed group sample imbalance across the 12 album families (ranging from 1989 with 75 tracks to Live with 8 tracks).
-
+* **Danceability Distribution (Figure 2):** Mean = 0.581, Median = 0.594, Mode = 0.604, Skewness = -0.265. Approximately symmetric bell-curve distribution. Upper outliers exposed severe catalog redundancy driven by 3 repeated entries of a single track across expanded album editions.
+* **Sample Distribution (Figure 3):** Categorical frequency across 12 engineered `album_families` revealed severe sample imbalance, ranging from 1989 as the mode with 75 tracks (72 musical tracks plus the 3 voice memo outliers) to Live with only 8 tracks.
 ### 3. Multivariate Analysis
 
 * **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` (r = 0.63). Identified severe multicollinearity risk between `energy` and `loudness` (r = 0.79) and strong negative correlation between `loudness` and `acousticness` (r = -0.73).
