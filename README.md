@@ -70,10 +70,10 @@ taylor-swift-spotify-eda/
 
 This EDA directly informs future machine learning tasks by establishing explicit data-structuring and modeling requirements:
 
-1. **Mandatory Outlier Filter:** The 3 non-musical voice memo outliers must be removed prior to fitting linear models to prevent severe parameter distortion and artificial variance inflation.
-2. **Minimum Category Sample Thresholds:** To address group sample imbalance and high statistical variance in smaller categories (e.g., *Live* family with n = 8), downstream modeling must enforce minimum sample size thresholds per `album_families`.
-3. **Model-Specific Multicollinearity Management:** The high linear correlation between `energy` and `loudness` (r = 0.79) poses a multicollinearity risk in linear regression (requiring feature reduction or PCA), whereas both features can safely be retained in tree-based ensemble algorithms.
-* **Localized Era & Temporal Framework (Preventing Pooling Bias):** `popularity` remains the core target variable. Global aggregates mask critical catalog behavior; predictive accuracy requires synthesizing the macro time dimension (`release_year`) directly with localized categorical context (`album_families`). To prevent global pooling bias from masking localized anomalies, downstream ML models must incorporate both temporal decay effects and era-specific dynamics—either through temporal-era interaction terms (`release_year` × `album_families`), era-stratified execution, or multi-level modeling (as demonstrated by localized anomalies in *evermore* and *TTPD*).
+* **Mandatory Outlier Filter:** The 3 non-musical voice memo outliers must be removed prior to fitting linear models to prevent severe parameter distortion and artificial variance inflation.
+* **Minimum Category Sample Thresholds:** To address group sample imbalance and high statistical variance in smaller categories (e.g., `Live` family with n = 8), downstream modeling must enforce minimum sample size thresholds per `album_families`.
+* **Model-Specific Multicollinearity Management:** The high linear correlation between `energy` and `loudness` (r = 0.79) poses a multicollinearity risk in linear regression (requiring feature reduction or PCA), whereas both features can safely be retained in tree-based ensemble algorithms.
+* **Localized Era & Temporal Framework (Preventing Pooling Bias):** `popularity` remains the core target variable. Pearson correlation analysis revealed that temporal progression (`release_year`, r = 0.63) heavily outweighs standalone acoustic features as a primary driver of streaming performance. However, its predictive power is best captured when contextualized dynamically within individual `album_families`. Evaluating at this localized micro level prevents global pooling bias from masking era-specific anomalies (such as those isolated within *evermore* and *TTPD*).
 ---
 
 ## 📊 Visualizations Highlights
