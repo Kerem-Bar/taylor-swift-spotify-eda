@@ -48,7 +48,7 @@ taylor-swift-spotify-eda/
 * **Outlier & Anomaly Isolation:** Isolated 3 non-musical voice memo records from *1989 (Deluxe Edition)* with exact 0 popularity scores.
 * **Structural Album Clustering:** Resolved catalog re-recording fragmentation by engineering 12 high-level `album_families` categorical groups and shortening titles for plot layout optimization, compressing *THE TORTURED POETS DEPARTMENT* to `TTPD`, *Taylor Swift (Deluxe Edition)* to `Deluxe`, and *Live From Clear Channel* to `Live`.
 * **Dual Temporal Feature Engineering:** Implemented functional separation by creating two distinct engineered time features from the raw `release_date`:
-  * **`release_year` (`int`):** Extracted via 4-character slicing to create an active numerical element for macro-level statistical correlations (r = 0.63) and trend analysis.
+  * **`release_year` (`int`):** Extracted via 4-character slicing to create an active numerical element for macro-level statistical correlations and trend analysis.
   * **`release_date_D` (`datetime`):** Converted raw text into a standardized pandas Datetime object to preserve precise day and month metadata for high-resolution scatter plot placement (Figure 5).
 ### 2. Univariate Analysis
 
