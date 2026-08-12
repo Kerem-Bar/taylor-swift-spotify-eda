@@ -58,7 +58,10 @@ taylor-swift-spotify-eda/
 ### 3. Multivariate Analysis
 
 * **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` ($r = 0.63$). Identified severe multicollinearity risk between `energy` and `loudness` ($r = 0.79$) and strong negative correlation between `loudness` and `acousticness` ($r = -0.73$).
-* **Temporal Dynamics & Re-recordings (Figure 5):** Validated the "Recency Effect" where post-2020 releases sustain elevated popularity (60–80+). Scatter plot analysis visually isolated the 3 voice memo outliers overlapping at the absolute y-axis origin (0 popularity) in late 2014 (*1989* era), confirming their status as isolated temporal anomalies within the continuous catalog. Uncovered dramatic upward popularity shifts in modern re-recorded albums (*"Taylor's Version"*) compared to original releases.
+* **Temporal Dynamics & Re-recordings (Figure 5):** Maps `popularity` against continuous release dates (`release_date_D`) across `album_families`, highlighting key temporal patterns:
+  * **Recency Effect:** Post-2020 releases sustain elevated popularity scores (heavily clustering between 60–80+).
+  * **Re-recording Shift:** Modern re-recorded albums (*"Taylor's Version"*) demonstrate dramatic upward popularity shifts compared to their original releases.
+  * **Outlier Isolation:** Visually isolates the 3 non-musical voice memo outliers overlapping at 0 popularity in late 2014 within the `1989` album family.
 
 * **Catalog Dispersion & Localized Era Anomalies (Figure 6):** Evaluates track popularity across engineered `album_families` (eras), uncovering three key dynamics:
   * **Inter-Era Temporal Decay:** Newer `album_families` exhibit lower variance and narrower Interquartile Ranges (IQR) clustered at high popularity scores, whereas older eras show higher variance and wider IQRs as time spreads catalog performance.
