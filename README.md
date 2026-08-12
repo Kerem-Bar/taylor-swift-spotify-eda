@@ -75,7 +75,7 @@ This EDA directly informs future machine learning tasks by establishing explicit
 1. **Mandatory Outlier Filter:** The 3 non-musical voice memo outliers must be removed prior to fitting linear models to prevent severe parameter distortion and artificial variance inflation.
 2. **Minimum Category Sample Thresholds:** To address group sample imbalance and high statistical variance in smaller categories (e.g., *Live* family with n = 8), downstream modeling must enforce minimum sample size thresholds per `album_families`.
 3. **Model-Specific Multicollinearity Management:** The high linear correlation between `energy` and `loudness` (r = 0.79) poses a multicollinearity risk in linear regression (requiring feature reduction or PCA), whereas both features can safely be retained in tree-based ensemble algorithms.
-4. **Localized Era Framework (Preventing Pooling Bias):** `popularity` remains the core target variable. Because temporal progression and localized era characteristics heavily outweigh standalone acoustic features, modeling must be executed dynamically at the `album_families` level to prevent macro-aggregate pooling bias.
+4. **Localized Era Framework (Preventing Pooling Bias):** `popularity` remains the core target variable. Temporal progression and localized era characteristics heavily outweigh standalone acoustic features, requiring downstream modeling to be executed dynamically at the `album_families` level. This prevents global aggregates from masking localized era anomalies (such as those isolated within *evermore* and *TTPD*).
 
 ---
 
