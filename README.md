@@ -98,7 +98,13 @@ This EDA directly informs future machine learning tasks by establishing explicit
 * **Language:** Python 3.10+
 * **Data Manipulation & Analysis:** Pandas, NumPy
 * **Data Visualization:** Matplotlib, Seaborn
-* **Statistical Techniques:** Pearson Correlation Analysis, Interquartile Range (IQR) Outlier Fences, Temporal Feature Extraction, Categorical Structural Clustering
+* **Statistical Techniques:** 
+  * Descriptive Statistics & Central Tendency (Mean, Median, Mode)
+  * Dispersion & Variance Metrics (Min, Max, Range, Standard Deviation, Interquartile Range)
+  * Distribution Shape & Density Analysis (Skewness, KDE)
+  * Outlier Detection (IQR Statistical Fences)
+  * Association & Multicollinearity Analysis (Pearson Correlation Coefficient)
+  * Feature Engineering (Categorical Structural Clustering, Temporal Slicing & Type Conversion)
 
 ---
 
