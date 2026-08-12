@@ -105,7 +105,7 @@ This EDA directly informs future machine learning tasks by establishing explicit
 * **Statistical Techniques:** 
   * Descriptive Statistics & Central Tendency (Mean, Median, Mode)
   * Dispersion & Variance Metrics (Min, Max, Range, Standard Deviation, Interquartile Range)
-  * Distribution Shape & Density Analysis (Skewness, KDE)
+  * Distribution Shape & Central Tendency Overlay (Skewness, Mean/Median/Mode Reference Lines)
   * Outlier Detection (IQR Statistical Fences)
   * Association & Multicollinearity Analysis (Pearson Correlation Coefficient)
   * Feature Engineering (Categorical Structural Clustering, Temporal Slicing & Type Conversion)
