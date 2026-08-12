@@ -60,12 +60,12 @@ taylor-swift-spotify-eda/
 * **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` ($r = 0.63$). Identified severe multicollinearity risk between `energy` and `loudness` ($r = 0.79$) and strong negative correlation between `loudness` and `acousticness` ($r = -0.73$).
 * **Temporal Dynamics & Re-recordings (Figure 5):** Validated the "Recency Effect" where post-2020 releases sustain elevated popularity (60–80+). Scatter plot analysis visually isolated the 3 voice memo outliers overlapping at the absolute y-axis origin (0 popularity) in late 2014 (*1989* era), confirming their status as isolated temporal anomalies within the continuous catalog. Uncovered dramatic upward popularity shifts in modern re-recorded albums (*"Taylor's Version"*) compared to original releases.
 
- * **Catalog Dispersion & Localized Era Anomalies (Figure 6):** Evaluates track popularity across `album_families`, uncovering three distinct structural and statistical dynamics:
-  * **Inter-Era Temporal Decay:** Newer, contemporary releases exhibit significantly lower variance and narrower Interquartile Ranges (IQR), whereas older standalone eras demonstrate higher variance and wider Interquartile Ranges (IQR) as time separates long-term catalog hits from deep cuts.
-  * **Intra-Era Re-recording Variance:** `album_families` containing multiple album editions (re-recordings alongside original releases) display significantly higher variance and wider Interquartile Ranges (IQR) compared to single-release eras, driven by the popularity gap between original masters and re-recorded versions.
-  * **Localized Anomalies vs. Global Baselines:** Demonstrates that flat global baselines (Mean = 57.86, Median = 62.00) completely mask era-specific behavior, whereas localized screening isolates true micro-anomalies:
-    * **`evermore` (2020):** Localized fences (57.88 to 70.88) isolated *"willow"* (popularity: 77) as a positive anomaly within a quieter indie-folk catalog, despite sitting within standard global parameters.
-    * **`TTPD` (2024):** Localized fences (68.50 to 88.50) isolated anomalies on both ends of a highly streamed era: *"Fortnight"* (popularity: 91) above the upper fence, and *"Clara Bow"* (popularity: 67) as an underperforming deep-cut anomaly below the lower fence, despite sitting well above global baselines.
+* **Catalog Dispersion & Localized Era Anomalies (Figure 6):** Evaluates `popularity` across `album_families`, uncovering three distinct dynamics:
+  * **Inter-Era Temporal Decay:** Newer releases display narrower IQRs and lower variance, whereas older eras exhibit wider IQRs as time separates long-term hits from deep cuts.
+  * **Intra-Era Re-recording Variance:** Families with re-recordings show significantly wider IQRs than single-release eras, driven by the popularity gap between original and "Taylor's Version" tracks.
+  * **Localized Anomalies vs. Global Baselines:** Flat global baselines (Mean = 57.86, Median = 62.00) mask era behavior, whereas localized screening isolates true micro-anomalies:
+    * **`evermore` (2020):** Localized fences (57.88–70.88) isolate *"willow"* (popularity: 77) as a positive anomaly in a quieter catalog.
+    * **`TTPD` (2024):** Localized fences (68.50–88.50) isolate *"Fortnight"* (91, upper anomaly) and *"Clara Bow"* (67, lower deep-cut anomaly).
 
 ## 💡 Conclusions & Downstream Predictive Modeling Guidelines
 
