@@ -61,7 +61,7 @@ taylor-swift-spotify-eda/
 * **Temporal Dynamics & Re-recordings (Figure 5):** Validated the "Recency Effect" where post-2020 releases sustain elevated popularity (60–80+). Uncovered dramatic upward popularity shifts in modern re-recorded albums ("Taylor's Version") compared to original releases.
 * **Era Micro-Anomalies (Figure 6):** Proved flat global baselines (Mean = 57.86, Median = 62.00) completely mask era-specific behavior. Localized screening isolated true era anomalies whose local performance directly conflicts with their overall global baseline standing:
   * **`evermore` (2020):** *"willow"* (popularity: 77) bypasses the localized upper fence (70.88), acting as a positive anomaly within a quieter indie-folk catalog despite sitting within standard global parameters.
-  * **`TTPD` (2024):** *"Fortnight"* (popularity: 91) exceeds the localized upper fence (88.50). Conversely, *"Clara Bow"* (popularity: 67) falls below the localized lower fence (68.50), acting as an underperforming deep-cut anomaly despite sitting well above global baselines.
+  * **`TTPD` (2024):** Within a highly streamed era baseline, *"Fortnight"* (popularity: 91) exceeds the elevated localized upper fence (88.50) as a standout hit far above global averages. Conversely, *"Clara Bow"* (popularity: 67) falls below the localized lower fence (68.50), acting as an underperforming deep-cut anomaly despite sitting well above global baselines.
 ---
 
 ## 💡 Conclusions & Downstream Predictive Modeling Guidelines
