@@ -1,6 +1,6 @@
-# <img src="https://authjs.dev/img/providers/spotify.svg" width="30" height="30" style="vertical-align: middle; margin-right: 10px;"> Taylor Swift Spotify Catalog — Exploratory Data Analysis (EDA)
+# <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" width="30" height="30" style="vertical-align: middle; margin-right: 10px;"> Taylor Swift Spotify Catalog — Exploratory Data Analysis (EDA)
 
----
+
 
 ---
 An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, structural layout, metadata parameters, and popularity as the primary metric of interest across Taylor Swift's Spotify discography.
