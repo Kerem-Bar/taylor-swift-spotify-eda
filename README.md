@@ -57,7 +57,7 @@ taylor-swift-spotify-eda/
 * **Sample Distribution (Figure 3):** Categorical frequency across 12 engineered `album_families` revealed severe sample imbalance, ranging from `1989` as the maximum/mode with 75 tracks (72 musical tracks plus the 3 voice memo outliers) to `Live` as the minimum with only 8 tracks.
 ### 3. Multivariate Analysis
 
-* **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` ($r = 0.63$). Identified severe multicollinearity risk between `energy` and `loudness` ($r = 0.79$) and strong negative correlation between `loudness` and `acousticness` ($r = -0.73$).
+* **Correlation Analysis (Figure 4):** Strong linear positive association between `popularity` and `release_year` (r = 0.63). Identified severe multicollinearity risk between `energy` and `loudness` (r = 0.79) and strong negative correlation between `loudness` and `acousticness` (r = -0.73).
 * **Temporal Dynamics & Re-recordings (Figure 5):** Maps `popularity` against continuous release dates (`release_date_D`) across `album_families`, highlighting key temporal patterns:
   * **Recency Effect:** Post-2020 releases sustain elevated popularity scores (heavily clustering between 60–80+).
   * **Re-recording Shift:** Modern re-recorded albums (*"Taylor's Version"*) demonstrate dramatic upward popularity shifts compared to their original releases.
