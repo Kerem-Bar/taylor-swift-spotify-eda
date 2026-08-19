@@ -139,4 +139,6 @@ python taylor_swift_eda.py
 ## 👤 Author
 
 **Kerem Bar**  
-*Master's Student in Information Technologies*
+*Master's Student in Information Sciences (Information Technology Specialization)*
+
+
