@@ -5,11 +5,11 @@
 ---
 An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, structural layout, metadata parameters, and popularity as the primary metric of interest across Taylor Swift's Spotify discography.
 
-![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-3776AB?style=for-the-badge)
-![Status](https://img.shields.io/badge/Project-Completed-brightgreen?style=for-the-badge)
-
+![](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat&logo=python&logoColor=white)
+![](https://img.shields.io/badge/Pandas-Data_Analysis-150458?style=flat&logo=pandas&logoColor=white)
+![](https://img.shields.io/badge/Matplotlib-Figure_Layouts-11557c?style=flat)
+![](https://img.shields.io/badge/Seaborn-Visualization-388E3C?style=flat)
+![](https://img.shields.io/badge/Project-Completed-44cc11?style=flat)
 ---
 
 
