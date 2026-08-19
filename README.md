@@ -141,4 +141,5 @@ python taylor_swift_eda.py
 **Kerem Bar**
 
 * Master's Student in Information Sciences (Information Technology Specialization)
+---
 
