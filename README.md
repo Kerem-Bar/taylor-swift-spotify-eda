@@ -119,7 +119,7 @@ This EDA directly informs future machine learning tasks by establishing explicit
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/Kerem-Bar/taylor-swift-spotify-eda.git](https://github.com/Kerem-Bar/taylor-swift-spotify-eda.git)
+git clone https://github.com/Kerem-Bar/taylor-swift-spotify-eda.git https://github.com/Kerem-Bar/taylor-swift-spotify-eda.git
 
 ```
 
