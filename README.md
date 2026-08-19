@@ -131,7 +131,7 @@ pip install pandas matplotlib seaborn
 3. Run the analysis script:
 ```bash
 python taylor_swift_eda.py
-
+```
 
 
 ---
