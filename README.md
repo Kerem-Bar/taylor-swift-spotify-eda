@@ -18,10 +18,10 @@ An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, st
 Digital streaming platforms have revolutionized how musical trends and artistic performance are quantified, empowering creators and record labels to make data-driven decisions that mitigate commercial risks. This research conducts a structured Exploratory Data Analysis (EDA) on Taylor Swift's Spotify catalog (582 rows, 18 columns). Her multi-decade career and diverse musical style make her catalog an ideal empirical landscape to explore how acoustic features interact with audience engagement over time.
 
 The variables are classified into four metadata-defined categories:
-* **Primary Metric of Interest (`int64`):** `popularity` (0 to 100 score calculated by Spotify based on stream volume and recency).
-* **Audio Descriptors (`float64`):** Continuous acoustic features (`acousticness`, `danceability`, `energy`, `instrumentalness`, `liveness`, `speechiness`, `valence`, `loudness`, `tempo`).
-* **Structural Layout Parameters (`int64`):** Spatial and sequencing parameters (`track_number`, `duration_ms`).
-* **Identification & Metadata Parameters (`object`):** Metadata attributes (`name`, `album`, `id`, `uri`, `release_date`).
+* **Primary Metric of Interest (`int64`):** `popularity` (Target variable; 0–100 index computed by Spotify based on stream velocity and recency).
+* **Audio Descriptors (`float64`):** Continuous acoustic dimensions (`acousticness`, `danceability`, `energy`, `instrumentalness`, `liveness`, `speechiness`, `valence`, `loudness`, `tempo`).
+* **Structural Layout Parameters (`int64`):** Track sequencing and track length metrics (`track_number`, `duration_ms`).
+* **Identification & Metadata (`object`):** Contextual identifiers and release timestamps (`name`, `album`, `id`, `uri`, `release_date`).
 ---
 
 ## 📁 Repository Structure
