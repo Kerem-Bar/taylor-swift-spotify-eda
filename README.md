@@ -75,6 +75,7 @@ The dataset comprises 582 Spotify tracks structured across four distinct feature
   * **Localized Anomalies vs. Global Baselines:** Flat global baselines (Mean = 57.86, Median = 62.00) completely mask era-specific behavior, whereas localized screening using family-specific statistical fences isolates true micro-anomalies:
     * **`evermore` (2020):** Localized fences (57.88–70.88) isolate *"willow"* (popularity: 77) as a positive anomaly within a quieter indie-folk era, despite sitting within standard global parameters.
     * **`TTPD` (2024):** Localized fences (68.50–88.50) isolate *"Fortnight"* (popularity: 91) above the upper fence, and *"Clara Bow"* (popularity: 67) as an underperforming anomaly within this specific era, despite sitting well above global baselines.
+---
 ## 💡 Conclusions & Downstream Predictive Modeling Guidelines
 
 This EDA directly informs future machine learning tasks by establishing explicit data-structuring and modeling requirements:
