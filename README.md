@@ -28,7 +28,6 @@ The variables are classified into four metadata-defined categories:
 
 ```text
 taylor-swift-spotify-eda/
-│── Code & Data Execution Guide.pdf     # Step-by-step Execution & Reproduction Guide (if applicable)
 │── eda_final_project.py                # Exploratory Data Analysis Pipeline, Visualizations & Metrics
 │── taylor_swift_spotify.csv            # Raw Spotify Dataset (582 records, 18 columns)
 │── EDA Final Project Kerem Bar.pdf     # Comprehensive EDA Academic Research Report
