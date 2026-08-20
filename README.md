@@ -117,18 +117,18 @@ This EDA directly informs future machine learning tasks by establishing explicit
 
 ## 🚀 How to Run the Project
 
-1. Clone the repository and enter the directory:
+1. **Clone the repository and enter the directory:**
 ```bash
 git clone https://github.com/Kerem-Bar/taylor-swift-spotify-eda.git
 cd taylor-swift-spotify-eda
 ```
 
-2. Install dependencies:
+2. **Install dependencies:**
 ```bash
 pip install pandas matplotlib seaborn
 ```
 
-3. Run the analysis script:
+3. **Run the analysis script:**
 ```bash
 python taylor_swift_eda.py
 ```
