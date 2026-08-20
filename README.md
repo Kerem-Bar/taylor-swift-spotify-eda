@@ -13,15 +13,11 @@ An empirical Exploratory Data Analysis (EDA) investigating audio descriptors, st
 ---
 
 
-## 📌 Project Overview & Variable Taxonomy
+## 📌 Project Overview
 
 Digital streaming platforms have revolutionized how musical trends and artistic performance are quantified, empowering creators and record labels to make data-driven decisions that mitigate commercial risks. This research conducts a structured Exploratory Data Analysis (EDA) on Taylor Swift's Spotify catalog (582 rows, 18 columns). Her multi-decade career and diverse musical style make her catalog an ideal empirical landscape to explore how acoustic features interact with audience engagement over time.
 
-The variables are classified into four metadata-defined categories:
-* **Primary Metric of Interest (`int64`):** `popularity` (0 to 100 score calculated by Spotify based on stream volume and recency).
-* **Audio Descriptors (`float64`):** Continuous acoustic dimensions (`acousticness`, `danceability`, `energy`, `instrumentalness`, `liveness`, `speechiness`, `valence`, `loudness`, `tempo`).
-* **Structural Layout Parameters (`int64`):** Track sequencing and length metrics (`track_number`, `duration_ms`).
-* **Identification & Metadata (`object`):** Catalog identifiers and release timestamps (`name`, `album`, `id`, `uri`, `release_date`).
+
 ---
 
 ## 📁 Repository Structure
@@ -41,7 +37,16 @@ taylor-swift-spotify-eda/
 ```
 
 ---
+## 🎼 Dataset Architecture & Feature Taxonomy
 
+The dataset comprises 582 Spotify tracks structured across four distinct feature dimensions:
+
+* **Primary Metric of Interest (`int64`):** `popularity` (0 to 100 score calculated by Spotify based on stream volume and recency).
+* **Audio Descriptors (`float64`):** Continuous acoustic dimensions (`acousticness`, `danceability`, `energy`, `instrumentalness`, `liveness`, `speechiness`, `valence`, `loudness`, `tempo`).
+* **Structural Layout Parameters (`int64`):** Track sequencing and length metrics (`track_number`, `duration_ms`).
+* **Identification & Metadata (`object`):** Catalog identifiers and release timestamps (`name`, `album`, `id`, `uri`, `release_date`).
+
+---
 ## 🔬 Methodology & Key Analysis Findings
 
 ### 1. Data Cleaning & Preprocessing
